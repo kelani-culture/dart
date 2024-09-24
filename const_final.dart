@@ -5,6 +5,8 @@ void main() {
   final age = 25;
   const name = "Mahdi";
 
+  print(name);
+  print(age);
   dynamic man = "Bayo";
   man = 12;
   print(man);
