@@ -1,0 +1,7 @@
+name:
+  learning_dart
+
+environment:
+  sdk: '^3.5.0'
+dependencies:
+  http: ^1.2.2
