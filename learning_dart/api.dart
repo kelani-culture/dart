@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+
 import 'dart:convert';
 
 void main() {
@@ -13,5 +14,20 @@ void main() {
   });
   // print(response.body);
 
+  divideByZero(10, 0);
   // response.then().onError(handleError)
+}
+
+// handle exception
+
+void divideByZero(int a, int b) {
+  try {
+    print(a ~/ b);
+  } catch (e) {
+    if (e is UnsupportedError) {
+      print("Your number is not correct");
+    }
+  } finally {
+    print("Done");
+  }
 }
