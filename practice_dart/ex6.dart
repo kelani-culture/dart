@@ -5,7 +5,7 @@ void main() {
   final word = stdin.readLineSync();
 
   String ans =
-      isPalindrome(word!) ? "It's a palindrome" : "It's not a palindrome";
+      isPalindrome(word!.toLowerCase()) ? "It's a palindrome" : "It's not a palindrome";
 
   print(ans);
 }
